@@ -14,6 +14,7 @@ const CellList: React.FC = () => {
 
 	useEffect(() => {
 		fetchCells()
+		// eslint-disable-next-line
 	}, [])
 
 	const renderedCells = cells?.map((cell) => (
