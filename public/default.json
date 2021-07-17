@@ -1,0 +1,37 @@
+[
+	{
+		"id": "lz2kv",
+		"content": "# Interactive ReactJS Coding Environment - Salahod-din Sambutuan\n\n1. Pwede kayo mag execute ng ReactJS code dito. \n2. Pwede ka mag add ng code cell or text cells. Mag hover lang sa baba ng cell na ito at makikita kayo na button para sa code and text.\n3. Pwede mo rin i move up/down ang mga cells.\n4. Pwede mo i resize ang cells.\n5. Pwedeng mag import ng mga libraries tulad ng axios, react-router-dom, redux and etc etc.\n6. Dimo na kelangan i install mga libraries na kelangan mo, import na agad.\n7. Pag na import mo na ang isang library di na ulit sya i import ng browser mo sa ibang cells kase may caching\n   system na at nakasave na ito sa IndexedDB ng browser.\n8. Shared ang codes sa lahat ng cells, kaya pwede mong i compartmentalize ang code mo.\n9. Meron nadin itong prettier code formatter para i format ang code mo.\n10. Gumawa ako ng show() method para mapakita sa preview ang mga object, html at jsx. (ang show() ay hindi parte ng javascript, ginawa ko lang ang method na yan)\n11. Pwede mag execute ng code at i display ang result sa console, press F12 then go to console para makita ang values.",
+		"type": "text"
+	},
+	{
+		"id": "g2op5",
+		"content": "import React from 'react'\nimport ReactDOM from 'react-dom'\n\n// pwede i import kahit anong npm package\nimport axios from 'axios' \nimport 'bulma/css/bulma.css'\n\nconst SampleApp = () => {\n  return (\n    <div >\n      <h1 className='is-size-1'>Hello!!!</h1>\n      <h1 className='is-size-2 has-text-success'>This is a react component</h1>\n    </div>\n  )\n}\n\nexport default SampleApp",
+		"type": "code"
+	},
+	{
+		"id": "chnu4",
+		"content": "# show() function\nginawa ko lang ang show function para mapakita ang mga objects, html at jsx. Hindi build-in sa javascript ang show() function",
+		"type": "text"
+	},
+	{
+		"id": "3syid",
+		"content": "show(\n  <div>\n    <SampleApp />\n    <hr style={{ border: '1px dotted red' }} />\n    <SampleApp />\n  </div>\n)",
+		"type": "code"
+	},
+	{
+		"id": "eoow8",
+		"content": "# Console\nPwedeng magdisplay ng data sa console ng browser, i click lang ang F12 at pumunta sa console",
+		"type": "text"
+	},
+	{
+		"id": "45yzn",
+		"content": "const addNums = (num1, num2) => {\r\n  return num1 + num2\r\n}\r\n\r\nconst result = addNums(2, 5)\r\n\r\nconsole.log(result)\r\n// pwede ring gamitin ang show\r\nshow(result)",
+		"type": "code"
+	},
+	{
+		"id": "2rzvu",
+		"content": "# Pero dika makakasave ng files mo gamit ito, kung gusto mo makasave follow mo steps sa baba:\n\n1. Install nodeJS https://nodejs.org/en/ \n2. Gawa ka ng folder kung saan mo gusto i save yung file mo.\n3. Navigate ka dun using cmd or gitbash.\n4. Type: npx salah-js-playground serve \n5. Pumunta sa http://localhost:4005 gamit ang browser mo.\n6. Done, lahat ng codes mo naka save na sa folder na ginawa mo.",
+		"type": "text"
+	}
+]
